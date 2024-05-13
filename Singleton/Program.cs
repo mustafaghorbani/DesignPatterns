@@ -6,6 +6,30 @@ namespace Singleton
     {
         static void Main(string[] args)
         {
+            ExampleOne();
+
+            ExampleTwo();
+
+            Console.ReadLine();
+        }
+
+        private static void ExampleOne()
+        {
+            // Get the singleton instance
+            Singleton singleton = Singleton.GetInstance();
+
+            // Call a method of the singleton instance
+            singleton.DoSomething();
+
+            // Try to create another instance (which should return the existing instance)
+            Singleton anotherSingleton = Singleton.GetInstance();
+
+            // Check if both instances are the same
+            Console.WriteLine("Are both instances the same? " + (singleton == anotherSingleton));
+        }
+
+        private static void ExampleTwo()
+        {
             var obj1 = LoadBalancer.Instance;
             var obj2 = LoadBalancer.Instance;
             var obj3 = LoadBalancer.Instance;
@@ -24,8 +48,6 @@ namespace Singleton
                 string serverName = balancer.NextServer.Name;
                 Console.WriteLine("Dispatch request to: " + serverName);
             }
-
-            Console.ReadLine();
         }
     }
 }

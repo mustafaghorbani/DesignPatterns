@@ -22,6 +22,7 @@ namespace Singleton
         }
 
         //Note: System.Lazy<T> available For .NET 4 (or higher) 
+        //Note: The code above implicitly uses LazyThreadSafetyMode.ExecutionAndPublication as the thread safety mode for the Lazy<LoadBalancer>.
         private static readonly Lazy<LoadBalancer> Lazy = new Lazy<LoadBalancer>(() => new LoadBalancer());
         public static LoadBalancer Instance { get { return Lazy.Value; } }
 
@@ -49,4 +50,3 @@ namespace Singleton
     }
 }
 
-//Note: The code above implicitly uses LazyThreadSafetyMode.ExecutionAndPublication as the thread safety mode for the Lazy<LoadBalancer>.
