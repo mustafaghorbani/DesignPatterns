@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{493B8C27-09B4-4332-81F0-3B5AA4EFE61A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{814E5FEE-5653-470E-A49D-356A7F5E0DCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{814E5FEE-5653-470E-A49D-356A7F5E0DCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{96BA606F-9557-48B7-8951-0ED02B48ED60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{814E5FEE-5653-470E-A49D-356A7F5E0DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{814E5FEE-5653-470E-A49D-356A7F5E0DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{814E5FEE-5653-470E-A49D-356A7F5E0DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96BA606F-9557-48B7-8951-0ED02B48ED60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96BA606F-9557-48B7-8951-0ED02B48ED60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96BA606F-9557-48B7-8951-0ED02B48ED60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96BA606F-9557-48B7-8951-0ED02B48ED60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
